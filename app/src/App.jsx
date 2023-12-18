@@ -5,26 +5,20 @@ function App() {
   const HandleDel = (e) => {
     try {
       setNumber(Number.slice(0, -1));
-      
-      
-      
     } catch (error) {
       // alert("Check your operation");
-      setNumber(Number+'');
-      
+      setNumber(Number + "");
     }
   };
 
   const HandleEqual = (e) => {
     try {
-    setNumber(eval(Number))
-      
-    }
-    catch (e) {
+      setNumber(eval(Number));
+    } catch (e) {
       alert("Check your input");
       setNumber(0);
     }
-  }
+  };
   return (
     <div className="App">
       <div className="calculator">
